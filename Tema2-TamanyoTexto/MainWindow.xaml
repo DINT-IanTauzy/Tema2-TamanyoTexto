@@ -7,7 +7,41 @@
         mc:Ignorable="d"
         Title="Tamaño del Texto" Height="397.455" Width="1120.658" Icon="Icono.ico">
     <Grid Margin="0,0,2,0">
-        <TextBlock HorizontalAlignment="Left" Margin="359,59,0,0" TextWrapping="Wrap" Text="Desarrollo de Interfaces" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontFamily="Rockwell Extra Bold"/>
+        <TextBlock x:Name="TituloTextBlock" Margin="42,57,0,0" TextWrapping="Wrap" Text="Desarrollo de Interfaces" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontFamily="Rockwell Extra Bold" Width="1045" Height="91" HorizontalAlignment="Left" TextAlignment="Center" Foreground="#FF468EF7">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="#FF171717"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <RadioButton x:Name="PequeñoRadio" Content="Pequeño" HorizontalAlignment="Left" Margin="134,251,0,0" VerticalAlignment="Top" Click="RadioButton_Click" Height="18" Width="69" GroupName="CambiaTexto" Tag="Pequeño" IsChecked="True" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="MedianoRadio" Content="Mediano" HorizontalAlignment="Left" Margin="512,254,0,0" VerticalAlignment="Top" GroupName="CambiaTexto" Tag="Mediano" Click="RadioButton_Click" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="GrandeRadio" Content="Grande" HorizontalAlignment="Left" Margin="864,263,0,0" VerticalAlignment="Top" GroupName="CambiaTexto" Tag="Grande" Click="RadioButton_Click" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
 
     </Grid>
 </Window>
